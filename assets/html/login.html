@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="shortcut icon" type="image/png" href="../img/icono-logo.png">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/formularios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/87ad13e327.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="open">
+        <label for="open" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="menu">
+            <a href='marcas.html' class="nav-option box">Marcas</a>
+            <a href='misReservas.html' class="nav-option box">Mis Reservas</a>
+            <a href='catalogo.html' onclick="recogerIdMarca(0)" class="nav-option box">Catalogo</a>
+            
+        </div>
+        <div class="nav-logo"><img src="../img/logo.png" alt="logo" id="logo"><img src="../img/icono-logo.png" alt="icono-logo" id="icono-logo"></div>
+        <div class="nav-user"><div id="login"><i class="fa-solid fa-user"></i></div> <button class="sesion"><i class="fa-solid fa-right-from-bracket"></i></button></div>
+    </nav>
+    <main>
+        <div class="containerLogin animate_animated  animate_fadeInUp">
+            <div class="login-cont" id="itLog1">
+            </div>
+            <div class="login-cont" id="itLog2">
+                <div class="login-titulo">LOGIN</div>
+                <label class="login-label" >Email</label>
+                <div class="login-inp"><input id="email1" type="email" required></div>
+                <label class="login-label">Contraseña</label>
+                <div class="login-inp"><input id="password1"type="password" required></div>
+                <div id="recuerdame">
+                    <label class="login-label">Recuerdame</label>
+                    <div class="login-inp"><input id="password"type="checkbox" required></div>
+                </div>
+                <div>No tienes una cuenta, <a href="registro.html">Registrate</a></div>
+                <div class="login-button"><input id="buttonL"  type="button" onclick="iniciarSesion()" value="Ingresar"></div>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.153429433029!2d-3.8098801000000013!3d40.3389423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418944a697ca19%3A0xf43dc9c5776c6f5!2sMabusa%20Carrocer%C3%ADa%20PEUGEOT%20y%20Multimarca!5e0!3m2!1ses!2ses!4v1682189506249!5m2!1ses!2ses" width="50%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-info">
+            <div class="footer-politica">
+                <div>Privacidad y legalidad</div>
+                <div>Puntos de recogida</div>
+                <div>Condiciones de uso</div>
+            </div>
+            
+            <div class="footer-redes">
+                <div><i class="fa-solid fa-phone"></i></div>                
+                <div><i class="fa-regular fa-envelope"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-youtube"></i></div>
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-tiktok"></i></div>
+                <div><i class="fa-brands fa-discord"></i></div>
+            </div>
+        </div>
+
+        <div class="footer-derechos">
+            <i class="fa-regular fa-copyright"></i>&nbsp;  DriveXperience
+        </div>
+    </footer>
+
+    <script src="../js/general.js"></script>
+</body>
+
+</html>
